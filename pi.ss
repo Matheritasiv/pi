@@ -82,14 +82,14 @@
 ;}}}
 
 ;{{{ π = 4 arctan 1
-#;(let ([b 10])
+#;(let ([b 1000])
   (letrec* ([pr (lambda (x) (printer x))]
             [calc (make-calc-coroutine pr b 1 4)]
             [printer (make-print-coroutine b values calc)])
     (printer 'nil)))
 ;}}}
 ;{{{ π = 4 arctan (1 / 2) + 4 arctan (1 / 3)
-#;(let ([b 10])
+#;(let ([b 1000])
   (letrec* ([pr (lambda (x) (printer x))]
             [calc1 (make-calc-coroutine pr b 1/2 4)]
             [calc2 (make-calc-coroutine pr b 1/3 4)]
@@ -97,7 +97,7 @@
     (printer 'nil)))
 ;}}}
 ;{{{ π = 4 arctan (1 / 7) + 4 arctan (3 / 4)
-#;(let ([b 10])
+#;(let ([b 1000])
   (letrec* ([pr (lambda (x) (printer x))]
             [calc1 (make-calc-coroutine pr b 1/7 4)]
             [calc2 (make-calc-coroutine pr b 3/4 4)]
@@ -105,7 +105,7 @@
     (printer 'nil)))
 ;}}}
 ;{{{ π = 20 arctan (1 / 7) + 8 arctan (3 / 79)
-(let ([b 10])
+(let ([b 1000])
   (letrec* ([pr (lambda (x) (printer x))]
             [calc1 (make-calc-coroutine pr b 1/7 20)]
             [calc2 (make-calc-coroutine pr b 3/79 8)]
@@ -113,7 +113,7 @@
     (printer 'nil)))
 ;}}}
 ;{{{ π = 16 arctan (1 / 5) - 4 arctan (1 / 239)
-#;(let ([b 10])
+#;(let ([b 1000])
   (letrec* ([pr (lambda (x) (printer x))]
             [calc1 (make-calc-coroutine pr b 1/5 16)]
             [calc2 (make-calc-coroutine pr b 1/239 4)]
@@ -121,7 +121,7 @@
     (printer 'nil)))
 ;}}}
 ;{{{ π = 48 arctan (1 / 18) + 32 arctan (1 / 57) - 20 arctan (1 / 239)
-#;(let ([b 10])
+#;(let ([b 1000])
   (letrec* ([pr (lambda (x) (printer x))]
             [calc1 (make-calc-coroutine pr b 1/18 48)]
             [calc2 (make-calc-coroutine pr b 1/57 32)]
