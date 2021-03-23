@@ -1,5 +1,5 @@
 # pi
-Calculating PI with infinite precision in scheme language.
+Calculating PI with unlimited precision in scheme language.
 
 The algorithm is based on the formula
 <!--
