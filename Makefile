@@ -1,4 +1,4 @@
-NAME	:= $(shell basename `pwd`)
+NAME	:= pi-stream
 
 all: run
 
